@@ -3,7 +3,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path')
 
-const url = 'https://material.io/tools/icons/static/data.json';
+const url = 'https://material.io/resources/icons/static/data.json';
 
 console.log('Fetching latest data...');
 
