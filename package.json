@@ -2,9 +2,7 @@
   "name": "material-design-icon-list",
   "version": "4.0.2-nightly.286",
   "description": "A list Google's Material Design Icons",
-  "main": "dist/cjs/list.js",
-  "module": "dist/esm/list.js",
-  "browser": "dist/list.js",
+  "module": "src/index",
   "author": "Eko Eryanto",
   "license": "MIT",
   "homepage": "https://github.com/ekoeryanto/material-design-icon-list",
@@ -23,17 +21,12 @@
     "json"
   ],
   "scripts": {
-    "build": "node ./scripts/download.js && rollup -c",
+    "build": "node ./scripts/download.js",
     "test": "mocha --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js"
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "conventional-changelog-cli": "^2.0.5",
-    "eslint": "^4.13.1",
-    "mocha": "^4.0.1",
-    "release-it": "^7.6.1",
-    "rollup": "^0.66.5",
-    "rollup-plugin-json": "^3.0.0"
+    "mocha": "^4.0.1"
   }
 }
