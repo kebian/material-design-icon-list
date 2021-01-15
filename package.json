@@ -23,7 +23,7 @@
     "json"
   ],
   "scripts": {
-    "postinstall": "node ./scripts/download.js && rollup -c",
+    "build": "node ./scripts/download.js && rollup -c",
     "test": "mocha --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js"
   },
