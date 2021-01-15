@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "postinstall": "node ./scripts/download.js",
-    "install": "rollup -c",
+    "build": "rollup -c",
     "test": "mocha --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js"
   },
